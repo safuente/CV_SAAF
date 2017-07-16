@@ -1,0 +1,168 @@
+ * {  
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    -webkit-padding-start: 0;
+ }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; 
+    font-size: 20px;
+}
+
+header {
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h2 {
+    border-bottom: 3px solid #000;
+    width: 100%;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.navbar {
+    background-color: #000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 5.66666666666667% 0 10.66666666666667%;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar > .navbar-list {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: flex;
+    min-width: 100px;
+    flex-direction: column;
+    width: 16.66666666666667%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;   
+}
+
+.navbar > .navbar-list > .navbar-item a {
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+    color: #A4A4A4;
+    padding: 1px;
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    border-bottom: 2px solid #fff; 
+    padding: 2px;  
+}
+
+
+.cover > .cover-img {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/sputnik.jpg);
+    height: 100vh;
+    width: 100vw;
+}
+
+.cover > .cover-img-deimos {
+    position:absolute;
+    left: 62%;
+    top: 35%;
+    background-size:150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/deimos.png);
+    min-height: 300px;
+    min-width: 300px;
+    z-index: 1;
+    animation: roll 5s infinite;
+}
+
+.cover-name {
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: white; 
+}
+
+.cover-job {
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white; 
+    font-style: italic;
+    padding-top: 5px;
+}
+
+.cover-cite{
+    position: absolute;
+    left: 30%;
+    top: 85%;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white; 
+}
+
+.roll {
+  transform: rotate(40deg);
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+video {
+    width:500px;
+    height:280px;
+    display: block;
+    margin: 0 auto;
+}
+
+.video {
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    background-color: #000;
+    color: white; 
+    padding: 20px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+}

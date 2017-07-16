@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+       	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    	<meta http-equiv="X-UA-Compatible" content="ie=11">
+        <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="./css/form.css"> 	
+	</head>
+    <body>
+       <nav class="navbar">	
+			<ul class="navbar-list">
+				<li class="navbar-item">
+				<a href="index.html">Home</a></li>
+				<li class="navbar-item">
+				<a href="index.html">Personal Info</a></li>
+				<li class="navbar-item">
+				<a href="index.html">Education</a></li>
+				<li class="navbar-item">
+				<a href="index.html">Experience</a></li>
+				<li class="navbar-item">
+				<a href="index.html">About me</a></li>
+				<li class="navbar-item">
+				<a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<main class="container">
+			<section class="contact-section-container">
+				<h1>Contact me</h1>
+				<div class="contact-form">
+					<form id="contact-form" name="contact" method="post" novalidate> 
+						<div class="form-row">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Name" >
+							<label for="surname">Surname</label>
+							<input type="text" id="surname" name="surname" placeholder="Surname" >
+						</div>
+						<div class="form-row" >
+							<label for="email">E-mail</label>
+							<input type="email" id="email" name="email" placeholder="E-mail" >
+							<label for="phone">Phone</label>
+							<input type="tel" id="phone" name="phone" placeholder="Phone" >
+						</div>
+						<div class="form-row" id="reason-main">
+							<label for="find-me">How find me?</label>
+							<select id="find-me" name="find-me">
+							  <option value="linkedin">Linkedin</option>
+							  <option value="infojobs">Infojobs</option>
+							  <option value="github">Github</option>
+							  <option value="other">Other</option>
+							</select>
+						</div>
+						<div class="form-row">
+							<label for="comments">Comments</label>
+							<textarea name="comments" id="comments" placeholder="Comments" required></textarea>
+						</div>
+						<div class="form-row word_left">
+							Words left: <span id="word_left">200</span>
+						</div>					
+						 <div class="form-button">
+                              <button type="submit" id="submit" >Submit</button>
+                         </div>         
+                  </form>
+                </div>
+            </section>
+        </main>
+	</body>
+		 <footer class="footer">
+            Santiago Álvarez Fuente &copy; 2017 
+     	</footer>
+	<script src="./js/jquery-3.2.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+	<script src="./js/form.js"></script>
+	
+
+    
+
+</html>
